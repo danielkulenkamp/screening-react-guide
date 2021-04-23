@@ -1,0 +1,493 @@
+Response: Throughput
+Num_models: 50, num_new_models: 50
+R squared threshold: 0.01, min_num_terms: 2, max_num_terms: 10
+
+Best model: 10 terms
+
+Model 1 (0.845976):
+Model with 10 terms
+     R^2 Contr. |     Coefficient | Term
+--------------- | --------------- | ---------------
+    -6.8903e-05 |          437413 | INTERCEPT
+         49.536 |         -107777 | transport_protocol=UDP500K
+        55.4955 |         89165.4 | transport_protocol=UDP1M
+        118.969 |          128370 | transport_protocol=UDP10M
+        28.0787 |         -175465 | mac=REACT80 & QoS_request=25
+        24.9103 |         -186759 | mac=REACTQoS80 & QoS_request=50
+        115.752 |          170628 | transport_protocol=UDP5M & CW_max=512
+        22.6813 |          176473 | transport_protocol=UDP10M & CW_max=1023
+        38.6155 |         -184637 | transport_protocol=TCP64KNo & QoS_request=0
+        34.9361 |         -175577 | transport_protocol=TCP256KNo & QoS_request=0
+Occurrences: 578
+R-Squared: 0.845976
+Adjusted R-Squared: 0.830224
+
+
+Occurence Counts: 
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        9196.45 |             419 |     6.30738e+07 |          150534 | transport_protocol
+              0 |             127 |     2.17494e+07 |          171255 | QoS_request
+              0 |              87 |     1.46531e+07 |          168426 | mac
+              0 |              58 |     8.46938e+06 |          146024 | CW_max
+              0 |              42 |     6.33524e+06 |          150839 | CW_min
+              0 |              12 |     1.32302e+06 |          110252 | QoS_flow_type
+              0 |               1 |         26319.4 |         26319.4 | traffic_shaping
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        2949.04 |             106 |     1.86067e+07 |          175535 | transport_protocol & QoS_request
+        919.015 |              60 |     1.11534e+07 |          185889 | transport_protocol & mac
+        4204.95 |              53 |     8.15458e+06 |          153860 | transport_protocol & CW_max
+        961.674 |              37 |     6.13038e+06 |          165686 | transport_protocol & CW_min
+        320.072 |              21 |     3.14265e+06 |          149650 | mac & QoS_request
+        135.373 |               9 |     1.18674e+06 |          131860 | transport_protocol & QoS_flow_type
+        37.8496 |               4 |          256322 |         64080.4 | mac & CW_max
+        19.7852 |               2 |          100737 |         50368.4 | mac & CW_min
+        33.0093 |               2 |           77800 |           38900 | QoS_flow_type & CW_min
+        10.4951 |               1 |         58479.9 |         58479.9 | QoS_flow_type & CW_max
+        9.63162 |               1 |         26319.4 |         26319.4 | CW_min & traffic_shaping
+
+
+Other Stuff:
+Columns in CSMatrix: 456
+
+
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+Other models: 
+
+Num terms: 2
+
+Model 1 (0.189492):
+Model with 2 terms
+     R^2 Contr. |     Coefficient | Term
+--------------- | --------------- | ---------------
+   -1.19209e-07 |          848993 | INTERCEPT
+       0.189492 |          152537 | transport_protocol=UDP10M
+Occurrences: 1
+R-Squared: 0.189492
+Adjusted R-Squared: 0.18105
+
+
+Occurrence Counts: 
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+       0.716305 |              28 |     3.80276e+06 |          135813 | transport_protocol
+      0.0202544 |              15 |     1.09653e+06 |         73102.1 | CW_max
+      0.0570414 |              15 |     1.16576e+06 |         77717.4 | traffic_shaping
+              0 |              11 |     1.04292e+06 |         94811.2 | CW_min
+       0.012358 |              10 |          719978 |         71997.9 | QoS_flow_type
+      0.0376844 |               8 |          552972 |         69121.5 | QoS_request
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+       0.545936 |               7 |          901286 |          128755 | transport_protocol & CW_min
+       0.547517 |               6 |          775713 |          129285 | transport_protocol & CW_max
+       0.485874 |               6 |          784471 |          130745 | transport_protocol & traffic_shaping
+       0.267525 |               2 |          407375 |          203688 | transport_protocol & QoS_flow_type
+      0.0485982 |               2 |         97142.9 |         48571.5 | QoS_request & QoS_flow_type
+      0.0538993 |               2 |         94703.1 |         47351.5 | QoS_request & CW_max
+      0.0476816 |               2 |         82759.3 |         41379.6 | QoS_flow_type & CW_max
+        0.04812 |               2 |         81423.8 |         40711.9 | QoS_flow_type & traffic_shaping
+      0.0556351 |               2 |         77838.5 |         38919.3 | CW_max & traffic_shaping
+      0.0816969 |               2 |         86161.1 |         43080.5 | CW_min & traffic_shaping
+       0.115518 |               1 |          230626 |          230626 | transport_protocol & QoS_request
+      0.0546491 |               1 |           71054 |           71054 | QoS_request & traffic_shaping
+      0.0150747 |               1 |         28708.8 |         28708.8 | QoS_flow_type & CW_min
+      0.0135502 |               1 |         26767.4 |         26767.4 | CW_max & CW_min
+
+
+Other Stuff:
+Columns in CSMatrix: 456
+
+
+--------------------------------------------------------------------------------------------------------------
+Num terms: 3
+
+Model 1 (0.404981):
+Model with 3 terms
+     R^2 Contr. |     Coefficient | Term
+--------------- | --------------- | ---------------
+   -2.38419e-07 |     1.02289e+06 | INTERCEPT
+       0.409818 |          164957 | transport_protocol=UDP10M
+       0.400144 |          186315 | transport_protocol=UDP5M & CW_max=512
+Occurrences: 2
+R-Squared: 0.404981
+Adjusted R-Squared: 0.392454
+
+
+Occurrence Counts: 
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        11.5806 |             100 |     1.65502e+07 |          165502 | transport_protocol
+              0 |              23 |     3.79515e+06 |          165006 | CW_max
+              0 |              13 |     2.20021e+06 |          169247 | CW_min
+              0 |              10 |     2.08398e+06 |          208398 | QoS_request
+              0 |               9 |     1.89659e+06 |          210732 | QoS_flow_type
+              0 |               8 |     1.29511e+06 |          161889 | traffic_shaping
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        6.73999 |              23 |     3.79515e+06 |          165006 | transport_protocol & CW_max
+        3.14316 |              13 |     2.20021e+06 |          169247 | transport_protocol & CW_min
+        1.41904 |              10 |     2.08398e+06 |          208398 | transport_protocol & QoS_request
+        2.49382 |               9 |     1.89659e+06 |          210732 | transport_protocol & QoS_flow_type
+         1.7494 |               8 |     1.29511e+06 |          161889 | transport_protocol & traffic_shaping
+
+
+Other Stuff:
+Columns in CSMatrix: 456
+
+
+--------------------------------------------------------------------------------------------------------------
+Num terms: 4
+
+Model 1 (0.532496):
+Model with 4 terms
+     R^2 Contr. |     Coefficient | Term
+--------------- | --------------- | ---------------
+   -7.15256e-07 |     1.11768e+06 | INTERCEPT
+       0.585506 |          120110 | transport_protocol=UDP1M
+          1.272 |          176258 | transport_protocol=UDP5M
+        1.33747 |          180215 | transport_protocol=UDP10M
+Occurrences: 6
+R-Squared: 0.532496
+Adjusted R-Squared: 0.517576
+
+
+Occurrence Counts: 
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        49.1785 |             144 |      2.2387e+07 |          155465 | transport_protocol
+              0 |              30 |     5.10319e+06 |          170106 | CW_max
+              0 |              12 |     1.50549e+06 |          125458 | CW_min
+              0 |              12 |     1.28919e+06 |          107433 | traffic_shaping
+              0 |              11 |     1.31159e+06 |          119236 | QoS_request
+              0 |               8 |     1.24842e+06 |          156053 | QoS_flow_type
+              0 |               2 |          238697 |          119348 | mac
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        16.5179 |              30 |     5.10319e+06 |          170106 | transport_protocol & CW_max
+        3.19188 |              10 |     1.39894e+06 |          139894 | transport_protocol & CW_min
+        2.25615 |               9 |     1.12724e+06 |          125249 | transport_protocol & traffic_shaping
+        2.31416 |               8 |     1.24842e+06 |          156053 | transport_protocol & QoS_flow_type
+        1.01077 |               6 |          890513 |          148419 | transport_protocol & QoS_request
+       0.178522 |               2 |          238697 |          119348 | mac & QoS_request
+       0.151554 |               2 |          118890 |         59445.2 | QoS_request & traffic_shaping
+      0.0653341 |               1 |         63491.4 |         63491.4 | QoS_request & CW_min
+      0.0836562 |               1 |         43060.7 |         43060.7 | CW_min & traffic_shaping
+
+
+Other Stuff:
+Columns in CSMatrix: 456
+
+
+--------------------------------------------------------------------------------------------------------------
+Num terms: 5
+
+Model 1 (0.591283):
+Model with 5 terms
+     R^2 Contr. |     Coefficient | Term
+--------------- | --------------- | ---------------
+   -1.43051e-06 |     1.02194e+06 | INTERCEPT
+       0.989462 |        -86287.8 | transport_protocol=UDP500K
+        1.22932 |          110654 | transport_protocol=UDP1M
+        2.37499 |          166802 | transport_protocol=UDP5M
+        2.50162 |          170759 | transport_protocol=UDP10M
+Occurrences: 12
+R-Squared: 0.591283
+Adjusted R-Squared: 0.573703
+
+
+Occurrence Counts: 
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        178.766 |             189 |     2.76109e+07 |          146089 | transport_protocol
+              0 |              35 |     5.59163e+06 |          159761 | CW_max
+       0.161114 |              20 |      2.3636e+06 |          118180 | QoS_request
+              0 |              10 |          942952 |         94295.2 | CW_min
+              0 |              10 |          770066 |         77006.6 | traffic_shaping
+              0 |               4 |          359772 |           89943 | mac
+              0 |               4 |          301083 |         75270.8 | QoS_flow_type
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        50.6145 |              34 |      5.5525e+06 |          163309 | transport_protocol & CW_max
+        6.23146 |              11 |     1.78797e+06 |          162542 | transport_protocol & QoS_request
+        3.18732 |               8 |          859755 |          107469 | transport_protocol & CW_min
+        2.79684 |               7 |          646270 |         92324.3 | transport_protocol & traffic_shaping
+        0.78044 |               3 |          296908 |         98969.3 | mac & QoS_request
+       0.389682 |               2 |          181920 |         90959.9 | transport_protocol & QoS_flow_type
+       0.429617 |               2 |         93664.4 |         46832.2 | QoS_request & traffic_shaping
+       0.121984 |               1 |         62863.9 |         62863.9 | mac & QoS_flow_type
+       0.116581 |               1 |         56299.4 |         56299.4 | QoS_request & QoS_flow_type
+       0.135733 |               1 |         39124.5 |         39124.5 | QoS_request & CW_max
+       0.201233 |               1 |         53065.6 |         53065.6 | QoS_request & CW_min
+       0.202323 |               1 |         30131.6 |         30131.6 | CW_min & traffic_shaping
+
+
+Other Stuff:
+Columns in CSMatrix: 456
+
+
+--------------------------------------------------------------------------------------------------------------
+Num terms: 6
+
+Model 1 (0.653433):
+Model with 6 terms
+     R^2 Contr. |     Coefficient | Term
+--------------- | --------------- | ---------------
+    -3.8147e-06 |          860656 | INTERCEPT
+        2.73295 |        -94103.2 | transport_protocol=UDP500K
+         3.1396 |          102839 | transport_protocol=UDP1M
+        6.55316 |          162943 | transport_protocol=UDP10M
+        6.39907 |          184301 | transport_protocol=UDP5M & CW_max=512
+        2.08507 |         -170967 | transport_protocol=TCP64KNo & QoS_request=0
+Occurrences: 32
+R-Squared: 0.653433
+Adjusted R-Squared: 0.634598
+
+
+Occurrence Counts: 
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        440.021 |             243 |      3.4024e+07 |          140017 | transport_protocol
+              0 |              42 |     6.65211e+06 |          158384 | QoS_request
+              0 |              37 |     5.82575e+06 |          157453 | CW_max
+              0 |              15 |      1.8756e+06 |          125040 | CW_min
+              0 |               5 |          606283 |          121257 | mac
+              0 |               5 |          490075 |           98015 | traffic_shaping
+              0 |               2 |          205501 |          102750 | QoS_flow_type
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        126.482 |              36 |     5.75004e+06 |          159723 | transport_protocol & CW_max
+        42.9296 |              35 |     5.90872e+06 |          168821 | transport_protocol & QoS_request
+        11.5826 |              14 |      1.8142e+06 |          129586 | transport_protocol & CW_min
+        3.69941 |               5 |          490075 |           98015 | transport_protocol & traffic_shaping
+        3.65631 |               5 |          606283 |          121257 | mac & QoS_request
+        1.04494 |               2 |          205501 |          102750 | transport_protocol & QoS_flow_type
+       0.527776 |               1 |         75706.2 |         75706.2 | QoS_request & CW_max
+       0.562041 |               1 |         61397.3 |         61397.3 | QoS_request & CW_min
+
+
+Other Stuff:
+Columns in CSMatrix: 456
+
+
+--------------------------------------------------------------------------------------------------------------
+Num terms: 7
+
+Model 1 (0.713385):
+Model with 7 terms
+     R^2 Contr. |     Coefficient | Term
+--------------- | --------------- | ---------------
+   -1.19209e-05 |          678195 | INTERCEPT
+        8.70136 |        -99242.5 | transport_protocol=UDP500K
+        9.60261 |         97699.4 | transport_protocol=UDP1M
+        20.5205 |          157804 | transport_protocol=UDP10M
+        19.9553 |          179162 | transport_protocol=UDP5M & CW_max=512
+        6.63098 |         -176105 | transport_protocol=TCP64KNo & QoS_request=0
+        5.92776 |         -167045 | transport_protocol=TCP256KNo & QoS_request=0
+Occurrences: 100
+R-Squared: 0.713385
+Adjusted R-Squared: 0.694487
+
+
+Occurrence Counts: 
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        1096.47 |             292 |     4.08542e+07 |          139912 | transport_protocol
+              0 |              68 |     1.15206e+07 |          169420 | QoS_request
+              0 |              42 |     6.49835e+06 |          154723 | CW_max
+              0 |              23 |     3.14595e+06 |          136780 | CW_min
+              0 |               8 |          939058 |          117382 | mac
+              0 |               7 |          684530 |           97790 | traffic_shaping
+              0 |               4 |          413195 |          103299 | QoS_flow_type
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        189.983 |              62 |     1.07781e+07 |          173841 | transport_protocol & QoS_request
+         344.83 |              42 |     6.49835e+06 |          154723 | transport_protocol & CW_max
+        51.4032 |              23 |     3.14595e+06 |          136780 | transport_protocol & CW_min
+        10.9827 |               7 |          684530 |           97790 | transport_protocol & traffic_shaping
+        12.6029 |               6 |          742456 |          123743 | mac & QoS_request
+        3.42411 |               2 |          216593 |          108297 | transport_protocol & QoS_flow_type
+        1.96029 |               2 |          196602 |         98300.9 | mac & QoS_flow_type
+
+
+Other Stuff:
+Columns in CSMatrix: 456
+
+
+--------------------------------------------------------------------------------------------------------------
+Num terms: 8
+
+Model 1 (0.771476):
+Model with 8 terms
+     R^2 Contr. |     Coefficient | Term
+--------------- | --------------- | ---------------
+   -3.93391e-05 |          492798 | INTERCEPT
+        28.4153 |         -104465 | transport_protocol=UDP500K
+        31.6746 |         92477.3 | transport_protocol=UDP1M
+        68.3922 |          152582 | transport_protocol=UDP10M
+        66.4955 |          173940 | transport_protocol=UDP5M & CW_max=512
+        21.9662 |         -181325 | transport_protocol=TCP64KNo & QoS_request=0
+         17.898 |         -164513 | transport_protocol=TCP256KNo & CW_min=15
+        19.7454 |         -172266 | transport_protocol=TCP256KNo & QoS_request=0
+Occurrences: 330
+R-Squared: 0.771476
+Adjusted R-Squared: 0.753702
+
+
+Occurrence Counts: 
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        2291.45 |             325 |     4.61163e+07 |          141896 | transport_protocol
+              0 |             104 |     1.69152e+07 |          162646 | QoS_request
+              0 |              44 |     6.60242e+06 |          150055 | CW_max
+              0 |              31 |     4.32854e+06 |          139630 | CW_min
+              0 |              24 |      3.0919e+06 |          128829 | mac
+              0 |               8 |          870965 |          108871 | QoS_flow_type
+              0 |               7 |          663246 |         94749.4 | traffic_shaping
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        547.652 |              83 |     1.44057e+07 |          173563 | transport_protocol & QoS_request
+        769.502 |              44 |     6.60242e+06 |          150055 | transport_protocol & CW_max
+        147.755 |              29 |     4.21235e+06 |          145254 | transport_protocol & CW_min
+        77.1305 |              19 |     2.36852e+06 |          124659 | mac & QoS_request
+         19.353 |               7 |          663246 |         94749.4 | transport_protocol & traffic_shaping
+        7.79558 |               3 |          438080 |          146027 | transport_protocol & QoS_flow_type
+        11.1142 |               3 |          315633 |          105211 | mac & QoS_flow_type
+        6.41084 |               2 |          407745 |          203873 | transport_protocol & mac
+         2.0254 |               1 |         71029.3 |         71029.3 | QoS_request & QoS_flow_type
+        2.01995 |               1 |         69962.4 |         69962.4 | QoS_request & CW_min
+        2.45868 |               1 |         46221.6 |         46221.6 | QoS_flow_type & CW_min
+
+
+Other Stuff:
+Columns in CSMatrix: 456
+
+
+--------------------------------------------------------------------------------------------------------------
+Num terms: 9
+
+Model 1 (0.811796):
+Model with 9 terms
+     R^2 Contr. |     Coefficient | Term
+--------------- | --------------- | ---------------
+   -3.93391e-05 |          671182 | INTERCEPT
+        28.4153 |         -104465 | transport_protocol=UDP500K
+        31.6746 |         92476.7 | transport_protocol=UDP1M
+        68.3922 |          127097 | transport_protocol=UDP10M
+        66.4955 |          173939 | transport_protocol=UDP5M & CW_max=512
+        13.3055 |          203877 | transport_protocol=UDP10M & mac=REACTQoS90
+        21.9662 |         -181328 | transport_protocol=TCP64KNo & QoS_request=0
+         17.898 |         -164515 | transport_protocol=TCP256KNo & CW_min=15
+        19.7454 |         -172268 | transport_protocol=TCP256KNo & QoS_request=0
+Occurrences: 330
+R-Squared: 0.811796
+Adjusted R-Squared: 0.794878
+
+
+Occurrence Counts: 
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        5896.76 |             369 |     5.38379e+07 |          145902 | transport_protocol
+              0 |             120 |     2.01573e+07 |          167977 | QoS_request
+              0 |              51 |     7.38212e+06 |          144747 | CW_max
+              0 |              42 |     5.91303e+06 |          140786 | mac
+              0 |              40 |     5.89188e+06 |          147297 | CW_min
+        9.11687 |              15 |     1.29828e+06 |         86551.9 | QoS_flow_type
+              0 |               4 |          191998 |         47999.5 | traffic_shaping
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        1722.83 |             103 |     1.80383e+07 |          175130 | transport_protocol & QoS_request
+        2107.54 |              48 |     7.23061e+06 |          150638 | transport_protocol & CW_max
+         543.33 |              35 |     5.67254e+06 |          162073 | transport_protocol & CW_min
+        122.049 |              17 |     3.25831e+06 |          191665 | transport_protocol & mac
+        187.425 |              17 |     2.11894e+06 |          124643 | mac & QoS_request
+        54.2254 |               8 |          941397 |          117675 | transport_protocol & QoS_flow_type
+        17.1741 |               3 |          153041 |         51013.6 | mac & CW_min
+        8.12689 |               2 |          207803 |          103902 | mac & QoS_flow_type
+        11.7782 |               2 |          125447 |         62723.5 | mac & CW_max
+        2.36828 |               1 |         81910.1 |         81910.1 | transport_protocol & traffic_shaping
+        4.39651 |               1 |         49489.2 |         49489.2 | mac & traffic_shaping
+           4.27 |               1 |         26061.2 |         26061.2 | QoS_flow_type & CW_max
+        9.42156 |               1 |           38593 |           38593 | QoS_flow_type & CW_min
+        4.98813 |               1 |         32892.7 |         32892.7 | QoS_flow_type & traffic_shaping
+        5.06526 |               1 |         27705.9 |         27705.9 | CW_min & traffic_shaping
+
+
+Other Stuff:
+Columns in CSMatrix: 456
+
+
+--------------------------------------------------------------------------------------------------------------
+Num terms: 10
+
+Model 1 (0.845976):
+Model with 10 terms
+     R^2 Contr. |     Coefficient | Term
+--------------- | --------------- | ---------------
+    -6.8903e-05 |          437413 | INTERCEPT
+         49.536 |         -107777 | transport_protocol=UDP500K
+        55.4955 |         89165.4 | transport_protocol=UDP1M
+        118.969 |          128370 | transport_protocol=UDP10M
+        28.0787 |         -175465 | mac=REACT80 & QoS_request=25
+        24.9103 |         -186759 | mac=REACTQoS80 & QoS_request=50
+        115.752 |          170628 | transport_protocol=UDP5M & CW_max=512
+        22.6813 |          176473 | transport_protocol=UDP10M & CW_max=1023
+        38.6155 |         -184637 | transport_protocol=TCP64KNo & QoS_request=0
+        34.9361 |         -175577 | transport_protocol=TCP256KNo & QoS_request=0
+Occurrences: 578
+R-Squared: 0.845976
+Adjusted R-Squared: 0.830224
+
+
+Occurrence Counts: 
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        9196.45 |             419 |     6.30738e+07 |          150534 | transport_protocol
+              0 |             127 |     2.17494e+07 |          171255 | QoS_request
+              0 |              87 |     1.46531e+07 |          168426 | mac
+              0 |              58 |     8.46938e+06 |          146024 | CW_max
+              0 |              42 |     6.33524e+06 |          150839 | CW_min
+              0 |              12 |     1.32302e+06 |          110252 | QoS_flow_type
+              0 |               1 |         26319.4 |         26319.4 | traffic_shaping
+
+     R^2 Contr. |           Count |       Magnitude |         AvgMag. | Factor Combination
+--------------- | --------------- | --------------- | --------------- | --------------------
+        2949.04 |             106 |     1.86067e+07 |          175535 | transport_protocol & QoS_request
+        919.015 |              60 |     1.11534e+07 |          185889 | transport_protocol & mac
+        4204.95 |              53 |     8.15458e+06 |          153860 | transport_protocol & CW_max
+        961.674 |              37 |     6.13038e+06 |          165686 | transport_protocol & CW_min
+        320.072 |              21 |     3.14265e+06 |          149650 | mac & QoS_request
+        135.373 |               9 |     1.18674e+06 |          131860 | transport_protocol & QoS_flow_type
+        37.8496 |               4 |          256322 |         64080.4 | mac & CW_max
+        19.7852 |               2 |          100737 |         50368.4 | mac & CW_min
+        33.0093 |               2 |           77800 |           38900 | QoS_flow_type & CW_min
+        10.4951 |               1 |         58479.9 |         58479.9 | QoS_flow_type & CW_max
+        9.63162 |               1 |         26319.4 |         26319.4 | CW_min & traffic_shaping
+
+
+Other Stuff:
+Columns in CSMatrix: 456
+
+
+--------------------------------------------------------------------------------------------------------------

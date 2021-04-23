@@ -1,0 +1,8 @@
+7														
+traffic_shaping	2	0	yes	no										
+CW_min	2	0	0	15										
+CW_max	2	0	512	1023										
+QoS_flow_type	3	0	BE	QoS	BE_QoS									
+QoS_request	4	0	0	10	25	50								
+mac	8	0	DCF	EDCA	REACT80	REACT85	REACT90	REACTQoS80	REACTQoS85	REACTQoS90				
+transport_protocol	12	0	UDP500K	UDP1M	UDP5M	UDP10M	TCP8K	TCP64K	TCP128K	TCP256K	TCP8KNo	TCP64KNo	TCP128KNo	TCP256KNo

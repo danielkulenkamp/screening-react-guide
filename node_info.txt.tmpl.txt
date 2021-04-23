@@ -1,0 +1,4 @@
+zotacB2.wilab2.ilabt.iminds.be,ath9k,1
+zotacB3.wilab2.ilabt.iminds.be,ath9k,1
+zotacC1.wilab2.ilabt.iminds.be,ath9k,1
+zotacC3.wilab2.ilabt.iminds.be,ath9k,1
