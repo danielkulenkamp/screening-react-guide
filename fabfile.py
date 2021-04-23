@@ -113,7 +113,8 @@ def network(c, frequency = 2412, interface = 'wls33',
         rate = 6
         essid = 'test'
 
-        backports_str = '/groups/wall2-ilabt-iminds-be/react/backports/16/backports-cw-tuning/'
+        # backports_str = '/groups/wall2-ilabt-iminds-be/react/backports/16/backports-cw-tuning/'
+        backports_str = PROJECT_PATH + "driver_extension/"
 
         # associate host
         conn = Connection(host)
