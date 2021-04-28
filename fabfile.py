@@ -19,7 +19,6 @@ from invoke import run
 from patchwork.files import exists
 
 from utils.conn_matrix import ConnMatrix
-from experiment_descriptors import dynamic_exps, complete_exps, line_exps, star_exps
 
 """
 For the fabric tasks, my convention here is to put the first argument as 'c'
@@ -34,7 +33,7 @@ You don't have to pass in a value for c, because the default value is None.
 USERNAME = 'USERNAME'
 
 # Path to where the GitHub repository is stored
-PROJECT_PATH = '/groups/wall2-ilabt-iminds-be/WILAB-PROJECT/react80211'
+PROJECT_PATH = '/groups/wall2-ilabt-iminds-be/WILAB-PROJECT/screening-react-guide/'
 
 # Path to where you want to save the data
 DATA_PATH = '/groups/wall2-ilabt-iminds-be/WILAB_PROJECT/data/'
@@ -114,7 +113,7 @@ def network(c, frequency = 2412, interface = 'wls33',
         essid = 'test'
 
         # backports_str = '/groups/wall2-ilabt-iminds-be/react/backports/16/backports-cw-tuning/'
-        backports_str = PROJECT_PATH + "driver_extension/"
+        backports_str = PROJECT_PATH + "/driver-extension/"
 
         # associate host
         conn = Connection(host)

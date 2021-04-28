@@ -28,6 +28,11 @@ Once the nodes are swapped in, we will need to install the dependencies. Python 
 
 	pip3 install fabric netifaces scapy numpy patchwork
 
+
+Make sure that you are either using a shared Python installation for all nodes, or that you install the dependencies locally on all of the nodes before continuing. 
+
+Now, make sure to clone this repository to a location that is /shared/ by all of the nodes. In our case, we used our project folder (for example, `/groups/wall2-ilabt-iminds-be/YOUR-PROJECT-FOLDER/`) to make sure that the repo was available to all nodes. 
+
 Once the python dependencies are installed, the driver extension to enable REACT needs to be compiled. From the GitHub repo folder, execute the following:
 
 	cd driver-extension
